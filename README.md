@@ -90,7 +90,7 @@ Before all, clone this repository.
 - Simply, run the following command:
 
 ```bash
-chmod -R 777 /root/ebook-converter-bot/
+chmod -R 777 /root/ebook-converter-bot/ && cd /root/ebook-converter-bot/
 docker-compose up --build -d
 ```
 
