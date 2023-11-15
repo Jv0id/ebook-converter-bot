@@ -16,7 +16,7 @@ repos:
       - id: rst-inline-touching-normal
       - id: text-unicode-replacement-char
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+    rev: v4.5.0
     hooks:
       - id: check-added-large-files
       - id: check-ast
@@ -43,7 +43,7 @@ repos:
       - id: trailing-whitespace
         types: [ python ]
   - repo: https://github.com/python-poetry/poetry
-    rev: '1.5.1'  # add version here
+    rev: '1.7.0'  # add version here
     hooks:
       - id: poetry-check
 #      - id: poetry-lock
@@ -53,20 +53,20 @@ repos:
       - id: absolufy-imports
   - repo: https://github.com/astral-sh/ruff-pre-commit
     # Ruff version.
-    rev: 'v0.0.280'
+    rev: 'v0.1.5'
     hooks:
       - id: ruff
   - repo: https://github.com/psf/black
-    rev: 23.7.0
+    rev: 23.11.0
     hooks:
       - id: black
         args: [ --config=pyproject.toml ]
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: 'v1.4.1'  # Use the sha / tag you want to point at
+    rev: 'v1.7.0'  # Use the sha / tag you want to point at
     hooks:
       - id: mypy
         args:
           - --install-types
         additional_dependencies:
           - types-toml
-          - SQLAlchemy==2.0.19
+          - SQLAlchemy==2.0.23
