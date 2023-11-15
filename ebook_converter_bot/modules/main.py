@@ -20,11 +20,9 @@ async def start(event: events.NewMessage.Event) -> None:
     await event.reply(
         _(
             "Hello {}!\n\n \
-        This bot allows you to convert E-Books to various formats, for example, from EPUB to KFX!\n \
-        It currently supports 34 input formats and 19 output formats, thanks to calibre powerful \
-        convert features.\n\n \
-        The bot is open source, you can find the source code of it [here](https://github.com/yshalsager/ebook-converter-bot).\n \
-        Developed by: [yshalsager](https://t.me/yshalsager/).",
+        This bot allows you to convert E-Books to various formats.\n\n \
+        The bot is open source, you can find the source code of it [here](https://github.com/Jv0id/ebook-converter-bot).\n \
+        Maintained by: [jp0id](https://t.me/pm_jp_bot/).",
             get_lang(event.chat_id),
         ).format(
             event.chat.first_name
